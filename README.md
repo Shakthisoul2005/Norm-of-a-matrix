@@ -7,34 +7,33 @@ To write a program to find the 1-norm, 2-norm and infinity norm of the matrix an
 ## Algorithm:
  # 1-norm
  ```
-1. Import Libraries: Import numpy as np for numerical computations.
-2.Take Input: Accept a user-provided array or matrix as input and evaluate it using eval().
-3.Convert to NumPy Array: Convert the evaluated input to a NumPy array using np.array().
-4.Compute 1-Norm: Use np.linalg.norm(arr, 1) to calculate the 1-norm.
-5.Format the Result: Format the computed norm to two decimal places using "{:.2f}".format().
-6.Output Result: Print the formatted result to the console.
-7.Ensure Valid Input: Input should be a valid array or matrix (automatically handled).
-8.Handle Errors: Errors in input or computation will result in an exception being raised.
+1.Input the Array: Read the input for the array (vector or matrix) from the user.
+2.Convert to NumPy Array: Parse the input into a NumPy array for numerical operations.
+3.Compute the 1-Norm: Use np.linalg.norm with the ord=1 parameter to calculate the 1-norm.
+4.Format the Result: Format the calculated 1-norm to two decimal places for better readability.
+5.Output the Result: Print the formatted 1-norm value.
+6.End Program: Ensure the program ends cleanly after displaying the result.
+
 ```
 # 2-norm
 ```
-1.Import Library: Import the numpy library for numerical computations.
-2.Input Array: Accept user input, evaluate it, and convert it into a NumPy array using np.array().
-3.Calculate 1-Norm: Use np.linalg.norm(arr, 1) to compute the 1-norm of the array or matrix.
-4.Format Result: Format the computed norm to two decimal places using "{:.2f}".format().
-5.Output Result: Print the formatted result to the console.
-6.Handle Errors: Ensure valid input and let the program raise exceptions for invalid cases.
+1.Input the Array: Read the input for the array (vector or matrix) from the user.
+2.Convert to NumPy Array: Parse the input into a NumPy array for numerical computations.
+3.Compute the 2-Norm: Use np.linalg.norm with the ord=2 parameter (default) to calculate the 2-norm.
+4.Format the Result: Format the calculated 2-norm to two decimal places for better readability.
+5.Output the Result: Print the formatted 2-norm value.
+6.End Program: Ensure the program concludes after displaying the result.
+
 ```
 # infinity norm
 ```
-1.Import Library: Import numpy as np for working with numerical arrays.
-2.Define Function: Define the function infinity_norm(matrix) to compute the infinity norm of a matrix.
-3.Calculate Absolute Values: Within the function, compute the absolute value of each element in the matrix.
-4.Compute Row Sums: Calculate the sum of the absolute values of elements in each row of the matrix.
-5.Find Maximum Row Sum: Determine the maximum row sum, which represents the infinity norm.
-6.Take Input Matrix: Accept user input, evaluate it, and convert it to a NumPy array using np.array().
-7.Call Function: Pass the input matrix to the infinity_norm function and store the result.
-8.Format and Print Result: Format the result to two decimal places and print it.
+1.Input the Matrix: Read the input matrix from the user.
+2.Convert to NumPy Array: Parse the input into a NumPy array for numerical operations.
+3.Compute Row Sums: For each row in the matrix, compute the sum of the absolute values of its elements.
+4.Find Maximum Row Sum: Identify the largest row sum among all rows.
+5.Format the Result: Format the calculated infinity norm (maximum row sum) to two decimal places.
+6.Output the Result: Print the formatted infinity norm value.
+
 ```
 
 
@@ -70,8 +69,6 @@ def infinity_norm(matrix):
 matrix=np.array(eval(input()))
 result=infinity_norm(matrix)
 print(f"{result:.2f}")
-
-
 
 ```
 ## Output:
